@@ -1,0 +1,46 @@
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Variables ── */
+:root {
+  --purple: #6c63ff;
+  --violet: #a78bfa;
+  --cyan: #38bdf8;
+  --teal: #2dd4bf;
+  --success: #34d399;
+  --warn: #fb923c;
+  --danger: #f87171;
+  --pink: #f472b6;
+
+  --bg: #07070f;
+  --card: rgba(255,255,255,0.04);
+  --card-border: rgba(255,255,255,0.09);
+  --text: #ffffff;
+  --text-muted: rgba(255,255,255,0.38);
+  --text-faint: rgba(255,255,255,0.18);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+/* ── Base ── */
+html, body, #root {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(108,99,255,0.35); border-radius: 4px; }
+
+/* ── Selection ── */
+::selection { background: rgba(108,99,255,0.35); }
